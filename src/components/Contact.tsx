@@ -11,14 +11,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "theresa.le@email.com",
-    href: "mailto:theresa.le@email.com",
+    value: "tranle2301.01@gmail.com",
+    href: "mailto:tranle2301.01@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "(555) 123-4567",
-    href: "tel:+15551234567",
+    value: "(206) 209-8181",
+    href: "tel:+12062098181",
   },
   {
     icon: MapPin,
@@ -29,8 +29,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/theresale",
-    href: "https://linkedin.com/in/theresale",
+    value: "linkedin.com/in/tranle2301",
+    href: "https://www.linkedin.com/in/tranle2301",
   },
 ];
 
