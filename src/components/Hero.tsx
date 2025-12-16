@@ -1,5 +1,6 @@
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 export function Hero() {
   return (
@@ -69,12 +70,14 @@ export function Hero() {
 
           {/* Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative animate-fade-up">
+          <div className="relative animate-fade-up">
               <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-soft-blue to-secondary overflow-hidden border-4 border-card shadow-card">
-                  <div className="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                    <span className="font-display text-6xl font-bold text-primary/30">TL</span>
-                  </div>
+                <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-card shadow-card">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Tran (Theresa) Le - Data Science Professional" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               {/* Decorative elements */}
