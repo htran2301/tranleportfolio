@@ -18,7 +18,7 @@ const projects = [
     description: "Built a healthcare monitoring system on Databricks using SQL to analyze 1,000+ synthetic patient records. Wrote analytical SQL queries to identify high-risk chronic disease patients with focused analysis on Type 2 Diabetes.",
     tools: ["Databricks", "SQL", "Data Analytics", "Dashboard", "Healthcare Data"],
     impact: "Enabled data-driven identification of high-risk patients and overdue follow-ups",
-    dashboardPdf: "/MSA_8040_Dashboard.pdf",
+    dashboardLink: "https://dbc-b3cd794b-3f4a.cloud.databricks.com/dashboardsv3/01f0d4c3a11e18358e750b4f8c067796/published?o=4111843936808833",
     featured: true,
   },
   {
@@ -91,9 +91,9 @@ export function Projects() {
                     <span className="text-muted-foreground">Impact: </span>
                     <span className="text-primary font-medium">{project.impact}</span>
                   </p>
-                  {project.dashboardPdf && (
+                  {project.dashboardLink && (
                     <a 
-                      href={project.dashboardPdf} 
+                      href={project.dashboardLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-sm text-accent hover:underline flex items-center gap-1"
