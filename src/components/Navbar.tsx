@@ -37,16 +37,19 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            <a href="#home" className="nav-link text-sm font-medium">
+              Home
+            </a>
+            <Button asChild size="sm" className="bg-primary hover:bg-navy-light">
+              <a href="/Resume_Le_Master_25.pdf" download>
+                Resume
+              </a>
+            </Button>
+            {navLinks.filter(link => link.name !== "Home").map((link) => (
               <a key={link.name} href={link.href} className="nav-link text-sm font-medium">
                 {link.name}
               </a>
             ))}
-            <Button asChild size="sm" className="bg-primary hover:bg-navy-light">
-              <a href="/resume.pdf" download>
-                Resume
-              </a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
