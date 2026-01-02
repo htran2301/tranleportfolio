@@ -6,9 +6,11 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     title: "Healthcare Analytics – Shepherd Center",
-    description: "Stroke patient data analysis using machine learning to support precision rehabilitation. Collaborated with clinicians to develop predictive models for patient outcomes.",
-    tools: ["Python", "Machine Learning", "Healthcare Data", "Statistical Analysis"],
-    impact: "Supporting clinical decision-making for rehabilitation planning",
+    location: "Atlanta, Georgia",
+    period: "August 2025 – December 2025",
+    description: "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning. Applied machine learning methods and data-driven approaches to identify effective treatment strategies. Performed data cleaning, exploratory analysis, feature engineering, and model evaluation, delivering clinically meaningful insights to advance patient care.",
+    tools: ["Python", "SQL", "RStudio", "Machine Learning", "Linear Regression", "Logistic Regression", "KNN", "Random Forest", "Generative AI"],
+    impact: "Delivered technical documentation, reproducible code, and stakeholder presentations for clinical decision-making",
     featured: true,
   },
   {
