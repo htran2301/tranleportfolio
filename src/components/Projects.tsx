@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     title: "Healthcare Analytics – Shepherd Center",
-    location: "Atlanta, Georgia",
     period: "August 2025 – December 2025",
     description: "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning. Applied machine learning methods and data-driven approaches to identify effective treatment strategies. Performed data cleaning, exploratory analysis, feature engineering, and model evaluation, delivering clinically meaningful insights to advance patient care.",
     tools: ["Python", "SQL", "RStudio", "Machine Learning", "Linear Regression", "Logistic Regression", "KNN", "Random Forest", "Generative AI"],
@@ -14,24 +13,27 @@ const projects = [
     featured: true,
   },
   {
+    title: "Healthcare Monitoring Systems – Databricks",
+    period: "August 2025 – December 2025",
+    description: "Built a healthcare monitoring system on Databricks using SQL to analyze 1,000+ synthetic patient records. Wrote analytical SQL queries to identify high-risk chronic disease patients with focused analysis on Type 2 Diabetes.",
+    tools: ["Databricks", "SQL", "Data Analytics", "Dashboard", "Healthcare Data"],
+    impact: "Enabled data-driven identification of high-risk patients and overdue follow-ups",
+    featured: true,
+  },
+  {
     title: "Fraudulent Job Post Detection",
-    description: "Built an ML pipeline analyzing 17,000+ job posting records to identify fraudulent listings with high accuracy.",
-    tools: ["Python", "Random Forest", "NLP", "Classification"],
-    impact: "98% accuracy in detecting fraudulent job posts",
+    period: "August 2024 – December 2024",
+    description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
+    tools: ["R", "Logistic Regression", "KNN", "Random Forest", "Feature Engineering"],
+    impact: "98% accuracy and 97% balanced accuracy with Random Forest",
     featured: true,
   },
   {
-    title: "Mental Health in Remote Work Settings",
-    description: "Predictive modeling and feature importance analysis on employee well-being data to understand factors affecting mental health.",
-    tools: ["Python", "Regression", "Feature Engineering", "Data Visualization"],
-    impact: "Identified key predictors of employee mental health",
-    featured: true,
-  },
-  {
-    title: "Capstone Site 2.0 Website",
-    description: "Led UI/UX and development efforts as Team Lead for an academic website redesign project.",
-    tools: ["Web Development", "UI/UX", "Team Leadership", "Project Management"],
-    impact: "Successfully delivered redesigned platform",
+    title: "Capstone Site 2.0 Website – Team Lead",
+    period: "January 2025 – May 2025",
+    description: "Led a team of 3 undergraduate students, collaborating with faculty, alumni, and companies to build 80% of website for CIS undergraduate students. Managed project scope, timelines, and documentation using Smartsheet.",
+    tools: ["Figma", "Webflow", "Google Sites", "UI/UX", "Smartsheet", "Project Management"],
+    impact: "Successfully delivered user-friendly platform for CIS students",
     featured: false,
   },
 ];
@@ -57,7 +59,10 @@ export function Projects() {
             >
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
-                  <CardTitle className="font-display text-lg pr-4">{project.title}</CardTitle>
+                  <div>
+                    <CardTitle className="font-display text-lg pr-4">{project.title}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
+                  </div>
                   {project.featured && (
                     <Badge className="bg-accent/10 text-accent border-0 shrink-0">Featured</Badge>
                   )}
