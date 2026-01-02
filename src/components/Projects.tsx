@@ -18,6 +18,7 @@ const projects = [
     description: "Built a healthcare monitoring system on Databricks using SQL to analyze 1,000+ synthetic patient records. Wrote analytical SQL queries to identify high-risk chronic disease patients with focused analysis on Type 2 Diabetes.",
     tools: ["Databricks", "SQL", "Data Analytics", "Dashboard", "Healthcare Data"],
     impact: "Enabled data-driven identification of high-risk patients and overdue follow-ups",
+    dashboardPdf: "/MSA_8040_Dashboard.pdf",
     featured: true,
   },
   {
@@ -85,11 +86,22 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className="pt-2 border-t border-border">
+                <div className="pt-2 border-t border-border flex items-center justify-between">
                   <p className="text-sm">
                     <span className="text-muted-foreground">Impact: </span>
                     <span className="text-primary font-medium">{project.impact}</span>
                   </p>
+                  {project.dashboardPdf && (
+                    <a 
+                      href={project.dashboardPdf} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-accent hover:underline flex items-center gap-1"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      View Dashboard
+                    </a>
+                  )}
                 </div>
               </CardContent>
             </Card>
