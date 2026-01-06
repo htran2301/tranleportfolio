@@ -127,7 +127,7 @@ export function Projects() {
                 </div>
                 <Button variant="outline" className="shrink-0 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  View Paper
+                  
                 </Button>
               </div>
             </CardContent>
