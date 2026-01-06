@@ -41,7 +41,7 @@ export function Navbar() {
               Home
             </a>
             <Button asChild size="sm" className="bg-primary hover:bg-navy-light">
-              <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.docx`} download>
+              <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.pdf`} download>
                 Resume
               </a>
             </Button>
@@ -78,7 +78,7 @@ export function Navbar() {
               ))}
               <div className="px-6 py-3">
                 <Button asChild size="sm" className="w-full bg-primary hover:bg-navy-light">
-                  <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.docx`} download>
+                  <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.pdf`} download>
                     Download Resume
                   </a>
                 </Button>
