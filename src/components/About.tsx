@@ -49,8 +49,9 @@ export function About() {
               applying machine learning techniques to stroke patient rehabilitation data. My goal 
               is to bridge the gap between complex data and meaningful insights that drive real-world impact.
             </p>
-            <p className="text-muted-foreground leading-relaxed">I'm currently seeking a Summer 2026 internships and full-time role post-graduation in December 2026 in Data Analytics, Data Science, and Data Engineering.<span className="text-primary font-medium">Summer 2026 internships</span> and 
-              <span className="text-primary font-medium"> full-time roles post-graduation</span> in 
+            <p className="text-muted-foreground leading-relaxed">
+              I'm currently seeking <span className="text-primary font-medium">Summer 2026 internships</span> and 
+              <span className="text-primary font-medium">full-time roles post-graduation</span> in 
               Data Analytics, Data Science, and Data Engineering.
             </p>
 
