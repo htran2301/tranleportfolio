@@ -1,4 +1,4 @@
-import { Code, BarChart3, Stethoscope, MessageSquare } from "lucide-react";
+import { Code, BarChart3, Stethoscope, MessageSquare, Workflow } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -27,6 +27,15 @@ const skillCategories = [
     skills: ["Communication", "Presentation", "Project Leadership", "Team Leadership", "Critical Thinking", "Problem Solving"],
     color: "bg-navy-light/10 text-navy-light",
   },
+];
+
+const workflowSteps = [
+  "Data Wrangling",
+  "EDA",
+  "Feature Engineering",
+  "Modeling",
+  "Evaluation",
+  "Visualization",
 ];
 
 export function Skills() {
@@ -66,8 +75,36 @@ export function Skills() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        {/* Data Science Workflow */}
+        <Card className="md:col-span-2 card-hover border-border/50">
+          <CardHeader className="pb-4">
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                <Workflow className="h-5 w-5" />
+              </div>
+              <CardTitle className="font-display text-lg">Data Science Workflow</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
+              {workflowSteps.map((step, index) => (
+                <div key={step} className="flex items-center gap-2 md:gap-4">
+                  <Badge 
+                    variant="secondary"
+                    className="bg-primary/10 text-primary hover:bg-primary/20 transition-colors px-3 py-1"
+                  >
+                    {step}
+                  </Badge>
+                  {index < workflowSteps.length - 1 && (
+                    <span className="text-muted-foreground font-medium">→</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
