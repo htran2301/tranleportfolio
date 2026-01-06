@@ -4,25 +4,25 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [{
   role: "Graduate Research Assistant",
   organization: "Shepherd Center / Institute for Insight",
-  period: "2025 – Present",
+  period: "August 2025 – December 2025",
   description: "Leading healthcare analytics research on stroke patient rehabilitation using machine learning techniques.",
-  current: true
+  current: false
 }, {
   role: "Research Assistant",
   organization: "CIS Department, Georgia State University",
-  period: "2024 – 2025",
+  period: "August 2024 – Present",
   description: "Conducted research on Emotional AI, resulting in AMCIS 2025 publication.",
-  current: false
+  current: true
 }, {
   role: "Learning Assistant",
   organization: "Mathematics & Statistics Department, GSU",
-  period: "2023 – 2024",
+  period: "August 2023 – May 2025",
   description: "Supported students in introductory statistics courses, developing communication and mentorship skills.",
   current: false
 }, {
   role: "Undergraduate Research Fellow",
   organization: "Georgia State University",
-  period: "2023 – 2024",
+  period: "January 2024 – May 2024",
   description: "Participated in research initiatives developing skills in academic research methodology.",
   current: false
 }];
