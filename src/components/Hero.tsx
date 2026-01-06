@@ -38,7 +38,7 @@ export function Hero() {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.pdf`} download>
+                <a href={`${import.meta.env.BASE_URL}Resume_Le_Master_26.pdf`} download="Resume_Le_Master_26.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Resume
                 </a>
