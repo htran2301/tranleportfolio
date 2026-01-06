@@ -1,5 +1,7 @@
 import { BarChart, Brain, HeartPulse, PieChart, FlaskConical } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -33,33 +35,32 @@ export function Services() {
   return (
     <section id="services" className="section-padding bg-card">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <ScrollAnimation className="text-center mb-16">
           <h2 className="section-title">What I Do</h2>
           <p className="section-subtitle mx-auto">
             Leveraging data science to solve real-world problems
           </p>
-        </div>
+        </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ScrollAnimationStagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card 
-              key={service.title} 
-              className="card-hover border-border/50 group"
-            >
-              <CardHeader>
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <service.icon className="h-6 w-6 text-accent" />
-                </div>
-                <CardTitle className="font-display text-lg">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <motion.div key={service.title} variants={staggerItem}>
+              <Card className="card-hover border-border/50 group h-full">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-6 w-6 text-accent" />
+                  </div>
+                  <CardTitle className="font-display text-lg">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </ScrollAnimationStagger>
       </div>
     </section>
   );

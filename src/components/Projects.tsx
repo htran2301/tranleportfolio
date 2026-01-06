@@ -2,6 +2,8 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -43,73 +45,74 @@ export function Projects() {
   return (
     <section id="projects" className="section-padding">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <ScrollAnimation className="text-center mb-16">
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle mx-auto">
             Real-world applications of data science and analytics
           </p>
-        </div>
+        </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <ScrollAnimationStagger className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <Card 
-              key={project.title} 
-              className={`card-hover border-border/50 overflow-hidden ${
-                project.featured ? 'lg:row-span-1' : ''
-              }`}
-            >
-              <CardHeader className="pb-4">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="font-display text-lg pr-4">{project.title}</CardTitle>
-                    <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
+            <motion.div key={project.title} variants={staggerItem}>
+              <Card 
+                className={`card-hover border-border/50 overflow-hidden h-full ${
+                  project.featured ? 'lg:row-span-1' : ''
+                }`}
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle className="font-display text-lg pr-4">{project.title}</CardTitle>
+                      <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
+                    </div>
+                    {project.featured && (
+                      <Badge className="bg-accent/10 text-accent border-0 shrink-0">Featured</Badge>
+                    )}
                   </div>
-                  {project.featured && (
-                    <Badge className="bg-accent/10 text-accent border-0 shrink-0">Featured</Badge>
-                  )}
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <CardDescription className="text-muted-foreground leading-relaxed">
-                  {project.description}
-                </CardDescription>
-                
-                <div className="flex flex-wrap gap-2">
-                  {project.tools.map((tool) => (
-                    <Badge 
-                      key={tool} 
-                      variant="secondary"
-                      className="bg-secondary text-xs"
-                    >
-                      {tool}
-                    </Badge>
-                  ))}
-                </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </CardDescription>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {project.tools.map((tool) => (
+                      <Badge 
+                        key={tool} 
+                        variant="secondary"
+                        className="bg-secondary text-xs"
+                      >
+                        {tool}
+                      </Badge>
+                    ))}
+                  </div>
 
-                <div className="pt-2 border-t border-border flex items-center justify-between">
-                  <p className="text-sm">
-                    <span className="text-muted-foreground">Impact: </span>
-                    <span className="text-primary font-medium">{project.impact}</span>
-                  </p>
-                  {project.dashboardLink && (
-                    <a 
-                      href={project.dashboardLink} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-sm text-accent hover:underline flex items-center gap-1"
-                    >
-                      <ExternalLink className="h-3 w-3" />
-                      View Dashboard
-                    </a>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
+                  <div className="pt-2 border-t border-border flex items-center justify-between">
+                    <p className="text-sm">
+                      <span className="text-muted-foreground">Impact: </span>
+                      <span className="text-primary font-medium">{project.impact}</span>
+                    </p>
+                    {project.dashboardLink && (
+                      <a 
+                        href={project.dashboardLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        View Dashboard
+                      </a>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </ScrollAnimationStagger>
 
         {/* Research Section */}
-        <div className="mt-16">
+        <ScrollAnimation delay={0.3} className="mt-16">
           <h3 className="font-display font-semibold text-2xl text-primary mb-6 text-center">
             Research & Publications
           </h3>
@@ -134,7 +137,7 @@ export function Projects() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
