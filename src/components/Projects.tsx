@@ -125,10 +125,12 @@ export function Projects() {
                     Research exploring the development and implications of emotionally intelligent AI systems
                   </p>
                 </div>
-                <Button variant="outline" className="shrink-0 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Paper
-                </Button>
+                <a href="https://aisel.aisnet.org/treos_amcis2025/194/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="shrink-0 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    View Paper
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
