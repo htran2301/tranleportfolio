@@ -5,7 +5,15 @@ import { componentTagger } from "lovable-tagger";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+export default defineConfig(({ mode }) => ({
+  server: {
+    host: "::",
+    port: 8080,
+  },
+  plugins: [
+    react(),
+    tsconfigPaths(),
+    mode === 'development' && componentTagger(),
+  ].filter(Boolean),
   base: "/tranleportfolio/",
-});
+}));
