@@ -6,6 +6,7 @@ import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAn
 import { motion } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
+import shepherdOutstandingCertificate from "@/assets/shepherd-outstanding-certificate.jpeg";
 
 const awards = [
   {
@@ -13,6 +14,13 @@ const awards = [
     institution: "Georgia State University Foundation",
     period: "Spring 2026",
     type: "scholarship",
+  },
+  {
+    title: "Outstanding Work Recognition",
+    institution: "Shepherd Center",
+    period: "December 2025",
+    type: "certificate",
+    image: shepherdOutstandingCertificate,
   },
   {
     title: "Fall 2025 Analytics Sprint",
