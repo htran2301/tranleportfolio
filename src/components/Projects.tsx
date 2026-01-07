@@ -28,6 +28,7 @@ const projects = [
     description: "Analyzed a 5,000-record global workforce dataset to examine how remote work influences employee mental health, stress levels, work–life balance, and productivity across industries and regions. Performed data cleaning and exploratory data analysis (EDA) and designed visualizations to uncover patterns in burnout, anxiety, depression, and productivity outcomes.",
     tools: ["Python", "Data Visualization", "EDA", "Mental Health Analytics", "pandas", "matplotlib", "seaborn"],
     impact: "Identified global and role-specific mental health trends, challenged assumptions about remote vs onsite work hours, and demonstrated how visual analytics can support evidence-based workplace policy decisions",
+    posterLink: "/MSA8030_Poster.pdf",
     featured: true,
   },
   {
@@ -127,6 +128,17 @@ export function Projects() {
                       >
                         <ExternalLink className="h-3 w-3" />
                         View Dashboard
+                      </a>
+                    )}
+                    {project.posterLink && (
+                      <a 
+                        href={project.posterLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        View Poster
                       </a>
                     )}
                   </div>
