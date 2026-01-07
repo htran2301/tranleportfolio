@@ -1,7 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
 import { motion } from "framer-motion";
-
 const contactInfo = [{
   icon: Mail,
   label: "Email",
@@ -23,10 +22,8 @@ const contactInfo = [{
   value: "linkedin.com/in/tranle2301",
   href: "https://www.linkedin.com/in/tranle2301"
 }];
-
 export function Contact() {
-  return (
-    <section id="contact" className="section-padding">
+  return <section id="contact" className="section-padding">
       <div className="container-custom">
         <ScrollAnimation className="text-center mb-16">
           <h2 className="section-title">Get in Touch</h2>
@@ -40,43 +37,24 @@ export function Contact() {
               <h3 className="font-display font-semibold text-xl text-primary mb-4">
                 Contact Information
               </h3>
-              <p className="text-muted-foreground mb-8">
-                I'm actively seeking Summer 2026 internships and full-time opportunities 
-                in Data Analytics, Data Science, and Data Engineering. Let's connect!
-              </p>
+              <p className="text-muted-foreground mb-8">I'm actively seeking Summer 2026 internship and full-time opportunities in Data Analytics, Data Science, and Data Engineering. Let's connect!</p>
             </ScrollAnimation>
 
             <ScrollAnimationStagger className="grid sm:grid-cols-2 gap-4">
-              {contactInfo.map(info => (
-                <motion.div 
-                  key={info.label} 
-                  variants={staggerItem}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/50"
-                >
+              {contactInfo.map(info => <motion.div key={info.label} variants={staggerItem} className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/50">
                   <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
                     <info.icon className="h-5 w-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{info.label}</p>
-                    {info.href ? (
-                      <a 
-                        href={info.href} 
-                        target={info.label === "LinkedIn" ? "_blank" : undefined} 
-                        rel={info.label === "LinkedIn" ? "noopener noreferrer" : undefined} 
-                        className="text-primary hover:text-accent transition-colors font-medium"
-                      >
+                    {info.href ? <a href={info.href} target={info.label === "LinkedIn" ? "_blank" : undefined} rel={info.label === "LinkedIn" ? "noopener noreferrer" : undefined} className="text-primary hover:text-accent transition-colors font-medium">
                         {info.value}
-                      </a>
-                    ) : (
-                      <p className="text-primary font-medium">{info.value}</p>
-                    )}
+                      </a> : <p className="text-primary font-medium">{info.value}</p>}
                   </div>
-                </motion.div>
-              ))}
+                </motion.div>)}
             </ScrollAnimationStagger>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
