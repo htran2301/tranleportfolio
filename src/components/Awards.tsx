@@ -8,8 +8,16 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
 import shepherdOutstandingCertificate from "@/assets/shepherd-outstanding-certificate.jpeg";
 import shepherdSprintCertificate from "@/assets/shepherd-sprint-certificate.jpeg";
+import amcisReviewerCertificate from "@/assets/amcis-reviewer-certificate.jpeg";
 
 const awards = [
+  {
+    title: "AMCIS 2025 Reviewer",
+    institution: "Americas Conference on Information Systems",
+    period: "August 2025",
+    type: "certificate",
+    image: amcisReviewerCertificate,
+  },
   {
     title: "Delta Analytics Scholars",
     institution: "Georgia State University Foundation",
