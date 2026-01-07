@@ -57,7 +57,7 @@ export function Projects() {
             className="inline-flex items-center gap-2 mt-4 text-accent hover:underline"
           >
             <Github className="h-5 w-5" />
-            View more on GitHub
+            View details on GitHub
           </a>
         </ScrollAnimation>
 
