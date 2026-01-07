@@ -15,6 +15,14 @@ const projects = [
     featured: true,
   },
   {
+    title: "Employee Attrition Prediction – Machine Learning",
+    period: "August 2025 – December 2025",
+    description: "Built a predictive machine learning pipeline to identify employees at risk of attrition using the IBM HR Analytics dataset (1,470 employees). Performed data cleaning, feature encoding, scaling, and addressed class imbalance using SMOTE. Trained and compared multiple classification models to balance recall and precision for actionable HR decision-making.",
+    tools: ["Python", "Machine Learning", "Logistic Regression", "Random Forest", "SVM", "XGBoost", "SMOTE", "Feature Engineering", "Model Evaluation"],
+    impact: "Identified key attrition drivers (overtime, job level, total working years) and delivered a balanced prediction model to support proactive retention strategies",
+    featured: true,
+  },
+  {
     title: "Healthcare Monitoring Systems – Databricks",
     period: "August 2025 – December 2025",
     description: "Built a healthcare monitoring system on Databricks using SQL to analyze 1,000+ synthetic patient records. Wrote analytical SQL queries to identify high-risk chronic disease patients with focused analysis on Type 2 Diabetes.",
