@@ -46,10 +46,19 @@ export function Projects() {
     <section id="projects" className="section-padding">
       <div className="container-custom">
         <ScrollAnimation className="text-center mb-16">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">Projects</h2>
           <p className="section-subtitle mx-auto">
             Real-world applications of data science and analytics
           </p>
+          <a 
+            href="https://github.com/htran2301" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 text-accent hover:underline"
+          >
+            <Github className="h-5 w-5" />
+            View more on GitHub
+          </a>
         </ScrollAnimation>
 
         <ScrollAnimationStagger className="grid md:grid-cols-2 gap-6">
