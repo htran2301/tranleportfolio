@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { GraduationCap, Award, Target, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
 import { motion } from "framer-motion";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import gsuDiploma from "@/assets/gsu-diploma.jpeg";
 
 const education = [{
   degree: "M.S. in Data Science and Analytics",
@@ -11,9 +14,10 @@ const education = [{
 }, {
   degree: "B.B.A. in Computer Information Systems",
   school: "Georgia State University",
-  specialization: "Data Analytics Concentration",
+  specialization: "Data Analytics Concentration • Magna Cum Laude",
   period: "May 2025",
-  current: false
+  current: false,
+  hasDiploma: true
 }];
 
 const values = [{
@@ -31,6 +35,8 @@ const values = [{
 }];
 
 export function About() {
+  const [showDiploma, setShowDiploma] = useState(false);
+
   return (
     <section id="about" className="section-padding bg-card">
       <div className="container-custom">
@@ -108,12 +114,30 @@ export function About() {
                     <p className="text-muted-foreground">{edu.school}</p>
                     {edu.specialization && <p className="text-sm text-muted-foreground">{edu.specialization}</p>}
                     <p className="text-sm text-accent mt-2">{edu.period}</p>
+                    {edu.hasDiploma && (
+                      <img 
+                        src={gsuDiploma} 
+                        alt="GSU Diploma"
+                        className="mt-4 w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                        onClick={() => setShowDiploma(true)}
+                      />
+                    )}
                   </CardContent>
                 </Card>
               ))}
             </div>
           </ScrollAnimation>
         </div>
+
+        <Dialog open={showDiploma} onOpenChange={setShowDiploma}>
+          <DialogContent className="max-w-4xl">
+            <img 
+              src={gsuDiploma} 
+              alt="Georgia State University Diploma"
+              className="w-full h-auto rounded-lg"
+            />
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
