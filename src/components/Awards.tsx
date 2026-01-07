@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
 import shepherdOutstandingCertificate from "@/assets/shepherd-outstanding-certificate.jpeg";
+import shepherdSprintCertificate from "@/assets/shepherd-sprint-certificate.jpeg";
 
 const awards = [
   {
@@ -27,7 +28,7 @@ const awards = [
     institution: "Georgia State University & Shepherd Center",
     period: "December 2025",
     type: "certificate",
-    image: shepherdCertificate,
+    image: shepherdSprintCertificate,
   },
   {
     title: "Dean's List",
