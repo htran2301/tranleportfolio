@@ -94,7 +94,7 @@ export function Awards() {
                     <img 
                       src={award.image} 
                       alt={award.title}
-                      className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                      className="w-full h-auto object-contain rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                       onClick={() => setSelectedImage(award.image!)}
                     />
                   ) : (
