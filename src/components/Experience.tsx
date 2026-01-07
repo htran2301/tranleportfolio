@@ -8,25 +8,37 @@ const experiences = [{
   role: "Graduate Research Assistant",
   organization: "Institute for Insight Department",
   period: "August 2025 – Present",
-  description: "Cooperating with faculty, peers and industry partners on real-world data science and machine learning projects for external stakeholders (Shepherd Center, Truist Bank, Better Business Bureau). Performing data cleaning, exploratory analysis, and feature engineering using Python, SQL, RStudio, and AI solutions. Building and evaluating predictive models using linear regression, classification, and ensemble learning.",
+  bullets: [
+    "Cooperating with faculty, peers and industry partners on real-world data science and ML projects for external stakeholders (Shepherd Center, Truist Bank, Better Business Bureau)",
+    "Performing data cleaning, exploratory analysis, and feature engineering using Python, SQL, RStudio, and AI solutions",
+    "Building and evaluating predictive models using linear regression, classification, and ensemble learning",
+    "Contributing to project deliverables including technical documentation, code, and stakeholder presentations"
+  ],
   current: true
 }, {
   role: "Research Assistant",
   organization: "CIS Department, Georgia State University",
   period: "August 2024 – Present",
-  description: "Conducted research on Emotional AI, resulting in AMCIS 2025 publication.",
+  bullets: [
+    "Conducted research on Emotional AI, resulting in AMCIS 2025 publication"
+  ],
   current: true
 }, {
   role: "Learning Assistant",
   organization: "Mathematics & Statistics Department, GSU",
   period: "August 2023 – May 2025",
-  description: "Supported students in introductory statistics courses, developing communication and mentorship skills.",
+  bullets: [
+    "Supported students in introductory statistics courses",
+    "Developed communication and mentorship skills"
+  ],
   current: false
 }, {
   role: "Undergraduate Research Fellow",
   organization: "Georgia State University",
   period: "January 2024 – May 2024",
-  description: "Participated in research initiatives developing skills in academic research methodology.",
+  bullets: [
+    "Participated in research initiatives developing skills in academic research methodology"
+  ],
   current: false
 }];
 
@@ -64,9 +76,14 @@ export function Experience() {
                         </div>
                         <h3 className="font-display font-semibold text-primary">{exp.role}</h3>
                         <p className="text-accent font-medium text-sm">{exp.organization}</p>
-                        <p className={`text-muted-foreground text-sm mt-2 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
-                          {exp.description}
-                        </p>
+                        <ul className={`text-muted-foreground text-sm mt-2 space-y-1 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                          {exp.bullets.map((bullet, i) => (
+                            <li key={i} className="flex items-start gap-2">
+                              <span className={`text-accent mt-1 ${index % 2 === 0 ? 'md:order-last' : ''}`}>•</span>
+                              <span>{bullet}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </CardContent>
                   </Card>
