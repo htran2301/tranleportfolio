@@ -1,8 +1,11 @@
-import { ArrowRight, Download, Mail } from "lucide-react";
+import { ArrowRight, Download, Mail, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import { usePortfolioViews } from "@/hooks/usePortfolioViews";
 
 export function Hero() {
+  const { viewCount, loading } = usePortfolioViews();
+
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 bg-gradient-to-b from-soft-blue/50 to-background">
       <div className="container-custom">
@@ -53,6 +56,13 @@ export function Hero() {
 
             {/* Quick Stats */}
             <div className="animate-fade-up animation-delay-400 mt-12 flex flex-wrap gap-6">
+              {/* View Counter */}
+              <div className="flex items-center gap-2 bg-primary/10 px-3 py-1.5 rounded-full">
+                <Eye className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">
+                  {loading ? "..." : `${viewCount?.toLocaleString() || 0} views`}
+                </span>
+              </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
                 <span className="text-sm text-muted-foreground">Healthcare Analytics</span>
