@@ -111,9 +111,11 @@ export function Awards() {
                        award.type === "certificate" ? "Certificate" :
                        award.type === "president" ? "President's List" : "Dean's List"}
                     </Badge>
-                    <h3 className="font-display font-semibold text-foreground">
-                      {award.title}
-                    </h3>
+                    {award.type !== "dean" && award.type !== "president" && (
+                      <h3 className="font-display font-semibold text-foreground">
+                        {award.title}
+                      </h3>
+                    )}
                     <p className="text-sm text-muted-foreground">{award.institution}</p>
                   </div>
 
