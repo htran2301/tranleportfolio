@@ -23,6 +23,14 @@ const projects = [
     featured: true,
   },
   {
+    title: "Impact of Remote Work on Mental Health – Data Visualization",
+    period: "August 2024 – December 2024",
+    description: "Analyzed a 5,000-record global workforce dataset to examine how remote work influences employee mental health, stress levels, work–life balance, and productivity across industries and regions. Performed data cleaning and exploratory data analysis (EDA) and designed visualizations to uncover patterns in burnout, anxiety, depression, and productivity outcomes.",
+    tools: ["Python", "Data Visualization", "EDA", "Mental Health Analytics", "pandas", "matplotlib", "seaborn"],
+    impact: "Identified global and role-specific mental health trends, challenged assumptions about remote vs onsite work hours, and demonstrated how visual analytics can support evidence-based workplace policy decisions",
+    featured: true,
+  },
+  {
     title: "Healthcare Monitoring Systems – Databricks",
     period: "August 2025 – December 2025",
     description: "Built a healthcare monitoring system on Databricks using SQL to analyze 1,000+ synthetic patient records. Wrote analytical SQL queries to identify high-risk chronic disease patients with focused analysis on Type 2 Diabetes.",
