@@ -1,7 +1,9 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Eye } from "lucide-react";
+import { usePortfolioViews } from "@/hooks/usePortfolioViews";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const { viewCount, loading } = usePortfolioViews();
 
   return (
     <footer className="bg-primary text-primary-foreground py-12">
@@ -44,9 +46,15 @@ export function Footer() {
             </a>
           </div>
 
-          <p className="text-primary-foreground/50 text-sm">
-            © {currentYear} Tran (Theresa) Le. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-end gap-2">
+            <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
+              <Eye className="h-4 w-4" />
+              <span>{loading ? "..." : viewCount?.toLocaleString()} views</span>
+            </div>
+            <p className="text-primary-foreground/50 text-sm">
+              © {currentYear} Tran (Theresa) Le. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
