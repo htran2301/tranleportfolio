@@ -1,10 +1,11 @@
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Github, ArrowUpRight, X } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
-import { motion } from "framer-motion";
-
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import msa8030Poster from "@/assets/msa8030-poster.jpg";
 const projects = [
   {
     title: "Healthcare Analytics – Shepherd Center",
@@ -28,7 +29,7 @@ const projects = [
     description: "Analyzed a 5,000-record global workforce dataset to examine how remote work influences employee mental health, stress levels, work–life balance, and productivity across industries and regions. Performed data cleaning and exploratory data analysis (EDA) and designed visualizations to uncover patterns in burnout, anxiety, depression, and productivity outcomes.",
     tools: ["Python", "Data Visualization", "EDA", "Mental Health Analytics", "pandas", "matplotlib", "seaborn"],
     impact: "Identified global and role-specific mental health trends, challenged assumptions about remote vs onsite work hours, and demonstrated how visual analytics can support evidence-based workplace policy decisions",
-    posterLink: "/MSA8030_Poster.pdf",
+    posterImage: msa8030Poster,
     featured: true,
   },
   {
@@ -59,6 +60,8 @@ const projects = [
 ];
 
 export function Projects() {
+  const [selectedPoster, setSelectedPoster] = useState<string | null>(null);
+
   return (
     <section id="projects" className="section-padding">
       <div className="container-custom">
@@ -130,16 +133,14 @@ export function Projects() {
                         View Dashboard
                       </a>
                     )}
-                    {project.posterLink && (
-                      <a 
-                        href={project.posterLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                    {project.posterImage && (
+                      <button 
+                        onClick={() => setSelectedPoster(project.posterImage!)}
                         className="text-sm text-accent hover:underline flex items-center gap-1"
                       >
                         <ExternalLink className="h-3 w-3" />
                         View Poster
-                      </a>
+                      </button>
                     )}
                   </div>
                 </CardContent>
@@ -176,6 +177,39 @@ export function Projects() {
           </Card>
         </ScrollAnimation>
       </div>
+
+      {/* Poster Modal */}
+      <AnimatePresence>
+        {selectedPoster && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={() => setSelectedPoster(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-5xl max-h-[90vh] overflow-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedPoster(null)}
+                className="absolute top-2 right-2 z-10 bg-background/80 rounded-full p-2 hover:bg-background transition-colors"
+              >
+                <X className="h-5 w-5" />
+              </button>
+              <img 
+                src={selectedPoster} 
+                alt="Project Poster" 
+                className="w-full h-auto rounded-lg"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
