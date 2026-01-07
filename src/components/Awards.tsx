@@ -88,7 +88,7 @@ export function Awards() {
                             : "bg-primary/10 text-primary border-primary/30"
                       }`}
                     >
-                      {award.type === "scholarship" ? "Foundation Award" : 
+                      {award.type === "scholarship" ? "Scholarship Award" : 
                        award.type === "president" ? "President's List" : "Dean's List"}
                     </Badge>
                     <h3 className="font-display font-semibold text-foreground">
