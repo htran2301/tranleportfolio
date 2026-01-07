@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const experiences = [{
   role: "Graduate Research Assistant",
-  organization: "Shepherd Center / Institute for Insight",
-  period: "August 2025 – December 2025",
-  description: "Leading healthcare analytics research on stroke patient rehabilitation using machine learning techniques.",
-  current: false
+  organization: "Institute for Insight Department",
+  period: "August 2025 – Present",
+  description: "Cooperating with faculty, peers and industry partners on real-world data science and machine learning projects for external stakeholders (Shepherd Center, Truist Bank, Better Business Bureau). Performing data cleaning, exploratory analysis, and feature engineering using Python, SQL, RStudio, and AI solutions. Building and evaluating predictive models using linear regression, classification, and ensemble learning.",
+  current: true
 }, {
   role: "Research Assistant",
   organization: "CIS Department, Georgia State University",
