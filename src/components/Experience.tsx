@@ -34,10 +34,12 @@ const experiences = [{
   current: false
 }, {
   role: "Undergraduate Research Fellow",
-  organization: "Georgia State University",
-  period: "January 2024 – May 2024",
+  organization: "J. Mack Robinson College of Business",
+  period: "January 2024 – April 2024",
   bullets: [
-    "Participated in research initiatives developing skills in academic research methodology"
+    "Cooperated with a team of like-minded students to conduct in-depth business research aimed at enhancing decision-making processes",
+    "Developed and refined research questions to address specific challenges and opportunities within the business landscape",
+    "Represented in team meetings, conferences, workshops, and seminars to exchange ideas, share insights, and foster a collaborative research environment"
   ],
   current: false
 }];
