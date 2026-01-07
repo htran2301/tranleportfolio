@@ -1,11 +1,8 @@
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.jpg";
-
 export function Hero() {
-
-  return (
-    <section id="home" className="min-h-screen flex items-center pt-20 bg-gradient-to-b from-soft-blue/50 to-background">
+  return <section id="home" className="min-h-screen flex items-center pt-20 bg-gradient-to-b from-soft-blue/50 to-background">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -56,7 +53,7 @@ export function Hero() {
             <div className="animate-fade-up animation-delay-400 mt-12 flex flex-wrap gap-6">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm text-muted-foreground">Healthcare Analytics</span>
+                <span className="text-sm text-muted-foreground">Data Analytics</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
@@ -74,11 +71,7 @@ export function Hero() {
           <div className="relative animate-fade-up">
               <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
                 <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-card shadow-card">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Tran (Theresa) Le - Data Science Professional" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={profilePhoto} alt="Tran (Theresa) Le - Data Science Professional" className="w-full h-full object-cover" />
                 </div>
               </div>
               {/* Decorative elements */}
@@ -88,6 +81,5 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
