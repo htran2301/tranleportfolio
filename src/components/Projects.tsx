@@ -90,14 +90,9 @@ export function Projects() {
                 }`}
               >
                 <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="font-display text-lg pr-4">{project.title}</CardTitle>
-                      <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
-                    </div>
-                    {project.featured && (
-                      <Badge className="bg-accent/10 text-accent border-0 shrink-0">Featured</Badge>
-                    )}
+                  <div>
+                    <CardTitle className="font-display text-lg">{project.title}</CardTitle>
+                    <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
