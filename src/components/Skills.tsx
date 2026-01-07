@@ -1,4 +1,4 @@
-import { Code, BarChart3, Stethoscope, MessageSquare, Workflow } from "lucide-react";
+import { Code, BarChart3, Stethoscope, MessageSquare, Workflow, Database } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
@@ -8,8 +8,14 @@ const skillCategories = [
   {
     icon: Code,
     title: "Technical Skills",
-    skills: ["Python", "R", "SQL", "Machine Learning", "Regression", "Classification", "Random Forest", "KNN", "Data Cleaning", "Feature Engineering", "Model Evaluation"],
+    skills: ["Python", "R", "SQL", "Machine Learning", "Regression", "Classification", "Random Forest", "KNN", "Model Evaluation"],
     color: "bg-primary/10 text-primary",
+  },
+  {
+    icon: Database,
+    title: "Data Wrangling & Preparation",
+    skills: ["Data Cleaning & Preprocessing", "Missing Value Handling", "Outlier Detection", "Feature Engineering", "Data Normalization & Transformation", "Data Validation & Quality Checks", "ETL / ELT Pipelines"],
+    color: "bg-teal-light/10 text-teal",
   },
   {
     icon: BarChart3,
