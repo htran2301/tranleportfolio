@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { Award, GraduationCap, Calendar, Trophy, FileCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
 import { motion } from "framer-motion";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
 
 const awards = [
@@ -53,6 +54,8 @@ const awards = [
 ];
 
 export function Awards() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="awards" className="section-padding">
       <div className="container-custom">
@@ -64,7 +67,7 @@ export function Awards() {
         </ScrollAnimation>
 
         <ScrollAnimationStagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {awards.map((award, index) => (
+          {awards.map((award) => (
             <motion.div key={`${award.title}-${award.period}`} variants={staggerItem}>
               <Card className={`card-hover border-border/50 h-full text-center ${
                 award.type === "scholarship" ? "border-teal/30 bg-teal/5" :
@@ -73,22 +76,12 @@ export function Awards() {
               }`}>
                 <CardContent className="p-6 flex flex-col items-center gap-4">
                   {award.image ? (
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src={award.image} 
-                          alt={award.title}
-                          className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-3xl">
-                        <img 
-                          src={award.image} 
-                          alt={award.title}
-                          className="w-full h-auto rounded-lg"
-                        />
-                      </DialogContent>
-                    </Dialog>
+                    <img 
+                      src={award.image} 
+                      alt={award.title}
+                      className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setSelectedImage(award.image!)}
+                    />
                   ) : (
                     <div className={`p-3 rounded-full ${
                       award.type === "scholarship"
@@ -142,6 +135,18 @@ export function Awards() {
             </motion.div>
           ))}
         </ScrollAnimationStagger>
+
+        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+          <DialogContent className="max-w-3xl">
+            {selectedImage && (
+              <img 
+                src={selectedImage} 
+                alt="Certificate"
+                className="w-full h-auto rounded-lg"
+              />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
