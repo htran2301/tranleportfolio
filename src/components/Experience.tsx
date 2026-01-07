@@ -28,19 +28,22 @@ const experiences = [{
   current: true
 }, {
   role: "Research Assistant",
-  organization: "CIS Department, Georgia State University",
+  organization: "Dr. Xinyu Fu, Computer Information System Department",
   period: "August 2024 – Present",
   bullets: [
-    "Conducted research on Emotional AI, resulting in AMCIS 2025 publication"
+    "Summarize literature reviews to support research projects, synthesizing findings into comprehensive reports by analyzing multiple research papers mainly operating Google Sheets",
+    "Present research findings in written reports and oral presentations",
+    "Cooperate with supervisor/PhD candidates through weekly meetings to provide project updates and align research progress with goal"
   ],
   current: true
 }, {
   role: "Learning Assistant",
-  organization: "Mathematics & Statistics Department, GSU",
+  organization: "Mathematics and Statistics Department",
   period: "August 2023 – May 2025",
   bullets: [
-    "Supported students in introductory statistics courses",
-    "Developed communication and mentorship skills"
+    "Advised over 1000 students in solving problems, completing assignments, and preparing for exams using Excel",
+    "Communicated regularly with professors and instructors to support with coursework and identify areas where students need help twice or three times each week",
+    "Provided one-on-one or group support to students in understanding statistical concepts and Excel functions in person and online twice a week with 2 hours at once"
   ],
   current: false
 }, {
