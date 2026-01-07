@@ -89,10 +89,10 @@ export function Experience() {
                         </div>
                         <h3 className="font-display font-semibold text-primary">{exp.role}</h3>
                         <p className="text-accent font-medium text-sm">{exp.organization}</p>
-                        <ul className={`text-muted-foreground text-sm mt-2 space-y-1 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                        <ul className="text-muted-foreground text-sm mt-2 space-y-1 text-left">
                           {exp.bullets.map((bullet, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <span className={`text-accent mt-1 ${index % 2 === 0 ? 'md:order-last' : ''}`}>•</span>
+                              <span className="text-accent mt-1">•</span>
                               <span>{bullet}</span>
                             </li>
                           ))}
