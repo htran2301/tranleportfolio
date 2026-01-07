@@ -6,6 +6,12 @@ import { motion } from "framer-motion";
 
 const awards = [
   {
+    title: "Dean's List",
+    institution: "Georgia State University",
+    period: "Fall 2025",
+    type: "dean",
+  },
+  {
     title: "President's List",
     institution: "Georgia State University",
     period: "Spring 2025",
