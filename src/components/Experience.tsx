@@ -5,17 +5,6 @@ import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAn
 import { motion } from "framer-motion";
 
 const experiences = [{
-  role: "Data Analytics",
-  organization: "Shepherd Center, Atlanta, Georgia",
-  period: "August 2025 – December 2025",
-  bullets: [
-    "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning",
-    "Applied machine learning methods (linear regression, logistic regression, KNN, Random Forest) and data-driven approaches to identify effective treatment strategies",
-    "Performed data cleaning, exploratory analysis, feature engineering, and model evaluation using Python, SQL, RStudio, and generative AI solution tools, delivering clinically meaningful insights to advance patient care",
-    "Presented project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
-  ],
-  current: true
-}, {
   role: "Graduate Research Assistant",
   organization: "Institute for Insight Department",
   period: "August 2025 – Present",
@@ -24,6 +13,17 @@ const experiences = [{
     "Performing data cleaning, exploratory analysis, and feature engineering using Python, SQL, RStudio, and AI solutions",
     "Building and evaluating predictive models using linear regression, classification, and ensemble learning",
     "Contributing to project deliverables including technical documentation, code, and stakeholder presentations"
+  ],
+  current: true
+}, {
+  role: "Data Analytics",
+  organization: "Shepherd Center, Atlanta, Georgia",
+  period: "August 2025 – December 2025",
+  bullets: [
+    "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning",
+    "Applied machine learning methods (linear regression, logistic regression, KNN, Random Forest) and data-driven approaches to identify effective treatment strategies",
+    "Performed data cleaning, exploratory analysis, feature engineering, and model evaluation using Python, SQL, RStudio, and generative AI solution tools, delivering clinically meaningful insights to advance patient care",
+    "Presented project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
   ],
   current: true
 }, {
