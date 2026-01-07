@@ -9,6 +9,8 @@ import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
 import shepherdOutstandingCertificate from "@/assets/shepherd-outstanding-certificate.jpeg";
 import shepherdSprintCertificate from "@/assets/shepherd-sprint-certificate.jpeg";
 import amcisReviewerCertificate from "@/assets/amcis-reviewer-certificate.jpeg";
+import rcobResearchFellowCertificate from "@/assets/rcob-research-fellow-certificate.jpeg";
+import witCertificate from "@/assets/wit-certificate.jpeg";
 
 const awards = [
   {
@@ -37,6 +39,20 @@ const awards = [
     period: "December 2025",
     type: "certificate",
     image: shepherdSprintCertificate,
+  },
+  {
+    title: "WIT Campus Graduate",
+    institution: "Women in Technology",
+    period: "2025",
+    type: "certificate",
+    image: witCertificate,
+  },
+  {
+    title: "Undergraduate Research Fellow",
+    institution: "J. Mack Robinson College of Business",
+    period: "Spring 2024",
+    type: "certificate",
+    image: rcobResearchFellowCertificate,
   },
   {
     title: "Dean's List",
