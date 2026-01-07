@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
 import { motion } from "framer-motion";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import shepherdCertificate from "@/assets/shepherd-certificate.jpeg";
 
 const awards = [
   {
@@ -16,6 +18,7 @@ const awards = [
     institution: "Georgia State University & Shepherd Center",
     period: "December 2025",
     type: "certificate",
+    image: shepherdCertificate,
   },
   {
     title: "Dean's List",
@@ -69,25 +72,44 @@ export function Awards() {
                 award.type === "president" ? "border-accent/30" : ""
               }`}>
                 <CardContent className="p-6 flex flex-col items-center gap-4">
-                  <div className={`p-3 rounded-full ${
-                    award.type === "scholarship"
-                      ? "bg-teal/10 text-teal"
-                      : award.type === "certificate"
-                        ? "bg-navy-light/10 text-navy-light"
-                        : award.type === "president" 
-                          ? "bg-accent/10 text-accent" 
-                          : "bg-primary/10 text-primary"
-                  }`}>
-                    {award.type === "scholarship" ? (
-                      <Trophy className="h-8 w-8" />
-                    ) : award.type === "certificate" ? (
-                      <FileCheck className="h-8 w-8" />
-                    ) : award.type === "president" ? (
-                      <Award className="h-8 w-8" />
-                    ) : (
-                      <GraduationCap className="h-8 w-8" />
-                    )}
-                  </div>
+                  {award.image ? (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <img 
+                          src={award.image} 
+                          alt={award.title}
+                          className="w-full h-32 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                        />
+                      </DialogTrigger>
+                      <DialogContent className="max-w-3xl">
+                        <img 
+                          src={award.image} 
+                          alt={award.title}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </DialogContent>
+                    </Dialog>
+                  ) : (
+                    <div className={`p-3 rounded-full ${
+                      award.type === "scholarship"
+                        ? "bg-teal/10 text-teal"
+                        : award.type === "certificate"
+                          ? "bg-navy-light/10 text-navy-light"
+                          : award.type === "president" 
+                            ? "bg-accent/10 text-accent" 
+                            : "bg-primary/10 text-primary"
+                    }`}>
+                      {award.type === "scholarship" ? (
+                        <Trophy className="h-8 w-8" />
+                      ) : award.type === "certificate" ? (
+                        <FileCheck className="h-8 w-8" />
+                      ) : award.type === "president" ? (
+                        <Award className="h-8 w-8" />
+                      ) : (
+                        <GraduationCap className="h-8 w-8" />
+                      )}
+                    </div>
+                  )}
                   
                   <div className="space-y-2">
                     <Badge 
