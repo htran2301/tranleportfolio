@@ -57,11 +57,11 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm text-muted-foreground">Machine Learning</span>
+                <span className="text-sm text-muted-foreground">Data Science</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm text-muted-foreground">Business Intelligence</span>
+                <span className="text-sm text-muted-foreground">Machine Learning</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
@@ -69,7 +69,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent" />
-                <span className="text-sm text-muted-foreground">Data Scientist</span>
+                <span className="text-sm text-muted-foreground">Business Intelligence</span>
               </div>
             </div>
           </div>
