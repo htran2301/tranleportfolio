@@ -33,14 +33,32 @@ const awards = [
   {
     title: "Dean's List",
     institution: "Georgia State University",
-    period: "Fall 2025, Fall 2024, Spring 2023",
+    period: "Fall 2025",
     type: "dean",
   },
   {
     title: "President's List",
     institution: "Georgia State University",
-    period: "Spring 2025, Summer 2024",
+    period: "Spring 2025",
     type: "president",
+  },
+  {
+    title: "Dean's List",
+    institution: "Georgia State University",
+    period: "Fall 2024",
+    type: "dean",
+  },
+  {
+    title: "President's List",
+    institution: "Georgia State University",
+    period: "Summer 2024",
+    type: "president",
+  },
+  {
+    title: "Dean's List",
+    institution: "Georgia State University",
+    period: "Spring 2023",
+    type: "dean",
   },
 ];
 
