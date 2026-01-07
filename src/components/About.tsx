@@ -118,7 +118,7 @@ export function About() {
                       <img 
                         src={gsuDiploma} 
                         alt="GSU Diploma"
-                        className="mt-4 w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                        className="mt-4 w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                         onClick={() => setShowDiploma(true)}
                       />
                     )}
