@@ -42,20 +42,20 @@ const projects = [
     featured: true,
   },
   {
-    title: "Fraudulent Job Post Detection",
-    period: "August 2024 – December 2024",
-    description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
-    tools: ["R", "Logistic Regression", "KNN", "Random Forest", "Feature Engineering"],
-    impact: "98% accuracy and 97% balanced accuracy with Random Forest",
-    featured: true,
-  },
-  {
     title: "Capstone Site 2.0 Website – Team Lead",
     period: "January 2025 – May 2025",
     description: "Led a team of 3 undergraduate students, collaborating with faculty, alumni, and companies to build 80% of website for CIS undergraduate students. Managed project scope, timelines, and documentation using Smartsheet.",
     tools: ["Figma", "Webflow", "Google Sites", "UI/UX", "Smartsheet", "Project Management"],
     impact: "Successfully delivered user-friendly platform for CIS students",
     featured: false,
+  },
+  {
+    title: "Fraudulent Job Post Detection",
+    period: "August 2024 – December 2024",
+    description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
+    tools: ["R", "Logistic Regression", "KNN", "Random Forest", "Feature Engineering"],
+    impact: "98% accuracy and 97% balanced accuracy with Random Forest",
+    featured: true,
   },
 ];
 
