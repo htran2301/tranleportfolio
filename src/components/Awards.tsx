@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Calendar, Trophy } from "lucide-react";
+import { Award, GraduationCap, Calendar, Trophy, FileCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
@@ -10,6 +10,12 @@ const awards = [
     institution: "Georgia State University Foundation",
     period: "Spring 2026",
     type: "scholarship",
+  },
+  {
+    title: "Fall 2025 Analytics Sprint",
+    institution: "Georgia State University & Shepherd Center",
+    period: "December 2025",
+    type: "certificate",
   },
   {
     title: "Dean's List",
@@ -59,18 +65,23 @@ export function Awards() {
             <motion.div key={`${award.title}-${award.period}`} variants={staggerItem}>
               <Card className={`card-hover border-border/50 h-full text-center ${
                 award.type === "scholarship" ? "border-teal/30 bg-teal/5" :
+                award.type === "certificate" ? "border-navy-light/30 bg-navy-light/5" :
                 award.type === "president" ? "border-accent/30" : ""
               }`}>
                 <CardContent className="p-6 flex flex-col items-center gap-4">
                   <div className={`p-3 rounded-full ${
                     award.type === "scholarship"
                       ? "bg-teal/10 text-teal"
-                      : award.type === "president" 
-                        ? "bg-accent/10 text-accent" 
-                        : "bg-primary/10 text-primary"
+                      : award.type === "certificate"
+                        ? "bg-navy-light/10 text-navy-light"
+                        : award.type === "president" 
+                          ? "bg-accent/10 text-accent" 
+                          : "bg-primary/10 text-primary"
                   }`}>
                     {award.type === "scholarship" ? (
                       <Trophy className="h-8 w-8" />
+                    ) : award.type === "certificate" ? (
+                      <FileCheck className="h-8 w-8" />
                     ) : award.type === "president" ? (
                       <Award className="h-8 w-8" />
                     ) : (
@@ -83,12 +94,15 @@ export function Awards() {
                       className={`${
                         award.type === "scholarship"
                           ? "bg-teal/10 text-teal border-teal/30"
-                          : award.type === "president" 
-                            ? "bg-accent/10 text-accent border-accent/30" 
-                            : "bg-primary/10 text-primary border-primary/30"
+                          : award.type === "certificate"
+                            ? "bg-navy-light/10 text-navy-light border-navy-light/30"
+                            : award.type === "president" 
+                              ? "bg-accent/10 text-accent border-accent/30" 
+                              : "bg-primary/10 text-primary border-primary/30"
                       }`}
                     >
                       {award.type === "scholarship" ? "Scholarship Award" : 
+                       award.type === "certificate" ? "Certificate" :
                        award.type === "president" ? "President's List" : "Dean's List"}
                     </Badge>
                     <h3 className="font-display font-semibold text-foreground">
