@@ -41,6 +41,7 @@ const projects = [
     tools: ["Databricks", "SQL", "Data Analytics", "Dashboard", "Healthcare Data"],
     impact: "Enabled data-driven identification of high-risk patients and overdue follow-ups",
     dashboardLink: "https://dbc-b3cd794b-3f4a.cloud.databricks.com/dashboardsv3/01f0d4c3a11e18358e750b4f8c067796/published?o=4111843936808833",
+    githubLink: "https://github.com/htran2301/healthcaresystems_project",
     featured: true,
   },
   {
