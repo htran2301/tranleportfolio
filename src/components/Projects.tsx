@@ -21,6 +21,7 @@ const projects = [
     description: "Built a predictive machine learning pipeline to identify employees at risk of attrition using the IBM HR Analytics dataset (1,470 employees). Performed data cleaning, feature encoding, scaling, and addressed class imbalance using SMOTE. Trained and compared multiple classification models to balance recall and precision for actionable HR decision-making.",
     tools: ["Python", "Machine Learning", "Logistic Regression", "Random Forest", "SVM", "XGBoost", "SMOTE", "Feature Engineering", "Model Evaluation"],
     impact: "Identified key attrition drivers (overtime, job level, total working years) and delivered a balanced prediction model to support proactive retention strategies",
+    githubLink: "https://github.com/htran2301/employeeprediction_project",
     featured: true,
   },
   {
