@@ -152,17 +152,6 @@ export function Projects() {
                         View Poster
                       </button>
                     )}
-                    {project.githubLink && (
-                      <a 
-                        href={project.githubLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-sm text-accent hover:underline flex items-center gap-1"
-                      >
-                        <Github className="h-3 w-3" />
-                        View Code
-                      </a>
-                    )}
                   </div>
                 </CardContent>
               </Card>
