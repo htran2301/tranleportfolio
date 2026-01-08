@@ -5,7 +5,6 @@ import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAn
 import { motion } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import gsuDiploma from "@/assets/gsu-diploma.jpeg";
-
 const education = [{
   degree: "M.S. in Data Science and Analytics",
   school: "Georgia State University",
@@ -19,7 +18,6 @@ const education = [{
   current: false,
   hasDiploma: true
 }];
-
 const values = [{
   icon: Target,
   title: "Analytical Rigor",
@@ -33,12 +31,9 @@ const values = [{
   title: "Collaboration",
   description: "Working effectively with cross-functional teams to achieve shared goals."
 }];
-
 export function About() {
   const [showDiploma, setShowDiploma] = useState(false);
-
-  return (
-    <section id="about" className="section-padding bg-card">
+  return <section id="about" className="section-padding bg-card">
       <div className="container-custom">
         <ScrollAnimation className="text-center mb-16">
           <h2 className="section-title">About Me</h2>
@@ -63,19 +58,14 @@ export function About() {
                 is to bridge the gap between complex data and meaningful insights that drive real-world impact.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm currently seeking <span className="text-primary font-medium">Summer 2026 internships</span> and 
-                <span className="text-primary font-medium">full-time roles post-graduation</span> in 
+                I'm currently seeking <span className="text-primary font-medium">Summer 2026 internship </span> and 
+                <span className="text-primary font-medium">full-time role post-graduation</span> in 
                 Data Analytics, Data Science, and Data Engineering.
               </p>
 
               {/* Values */}
               <ScrollAnimationStagger className="grid gap-4 mt-8">
-                {values.map(value => (
-                  <motion.div 
-                    key={value.title} 
-                    variants={staggerItem}
-                    className="flex items-start gap-4"
-                  >
+                {values.map(value => <motion.div key={value.title} variants={staggerItem} className="flex items-start gap-4">
                     <div className="p-2 bg-accent/10 rounded-lg">
                       <value.icon className="h-5 w-5 text-accent" />
                     </div>
@@ -83,8 +73,7 @@ export function About() {
                       <h4 className="font-medium text-primary">{value.title}</h4>
                       <p className="text-sm text-muted-foreground">{value.description}</p>
                     </div>
-                  </motion.div>
-                ))}
+                  </motion.div>)}
               </ScrollAnimationStagger>
             </div>
           </ScrollAnimation>
@@ -99,46 +88,30 @@ export function About() {
               {/* Timeline line */}
               <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-border" />
               
-              {education.map((edu, index) => (
-                <Card key={index} className={`relative ml-8 ${edu.current ? 'border-accent/50 shadow-soft' : ''}`}>
+              {education.map((edu, index) => <Card key={index} className={`relative ml-8 ${edu.current ? 'border-accent/50 shadow-soft' : ''}`}>
                   {/* Timeline dot */}
                   <div className={`absolute -left-8 top-6 w-6 h-6 rounded-full border-4 border-card ${edu.current ? 'bg-accent' : 'bg-muted'}`} />
                   
                   <CardContent className="p-6">
-                    {edu.current && (
-                      <span className="inline-block px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded mb-2">
+                    {edu.current && <span className="inline-block px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded mb-2">
                         Current
-                      </span>
-                    )}
+                      </span>}
                     <h4 className="font-display font-semibold text-primary">{edu.degree}</h4>
                     <p className="text-muted-foreground">{edu.school}</p>
                     {edu.specialization && <p className="text-sm text-muted-foreground">{edu.specialization}</p>}
                     <p className="text-sm text-accent mt-2">{edu.period}</p>
-                    {edu.hasDiploma && (
-                      <img 
-                        src={gsuDiploma} 
-                        alt="GSU Diploma"
-                        className="mt-4 w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                        onClick={() => setShowDiploma(true)}
-                      />
-                    )}
+                    {edu.hasDiploma && <img src={gsuDiploma} alt="GSU Diploma" className="mt-4 w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity" onClick={() => setShowDiploma(true)} />}
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </ScrollAnimation>
         </div>
 
         <Dialog open={showDiploma} onOpenChange={setShowDiploma}>
           <DialogContent className="max-w-4xl">
-            <img 
-              src={gsuDiploma} 
-              alt="Georgia State University Diploma"
-              className="w-full h-auto rounded-lg"
-            />
+            <img src={gsuDiploma} alt="Georgia State University Diploma" className="w-full h-auto rounded-lg" />
           </DialogContent>
         </Dialog>
       </div>
-    </section>
-  );
+    </section>;
 }
