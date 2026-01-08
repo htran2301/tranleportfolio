@@ -92,7 +92,21 @@ export function Projects() {
               >
                 <CardHeader className="pb-4">
                   <div>
-                    <CardTitle className="font-display text-lg">{project.title}</CardTitle>
+                    {project.githubLink ? (
+                      <a 
+                        href={project.githubLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors"
+                      >
+                        <CardTitle className="font-display text-lg flex items-center gap-2">
+                          {project.title}
+                          <Github className="h-4 w-4" />
+                        </CardTitle>
+                      </a>
+                    ) : (
+                      <CardTitle className="font-display text-lg">{project.title}</CardTitle>
+                    )}
                     <p className="text-sm text-muted-foreground mt-1">{project.period}</p>
                   </div>
                 </CardHeader>
