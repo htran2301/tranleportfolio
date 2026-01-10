@@ -1,4 +1,4 @@
-import { Code, BarChart3, Stethoscope, MessageSquare, Workflow, Database } from "lucide-react";
+import { Code, BarChart3, MessageSquare, Workflow, Database } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
@@ -22,12 +22,6 @@ const skillCategories = [
     title: "Analytics & Tools",
     skills: ["Tableau", "Power BI", "Excel", "Databricks", "Jupyter Notebook", "PyCharm", "Statistical Analysis", "Quantitative Research"],
     color: "bg-accent/10 text-accent",
-  },
-  {
-    icon: Stethoscope,
-    title: "Domain Expertise",
-    skills: ["Healthcare Analytics", "Business Intelligence", "Academic Research", "Applied Research", "Clinical Data Analysis"],
-    color: "bg-teal/10 text-teal",
   },
   {
     icon: MessageSquare,
