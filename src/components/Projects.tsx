@@ -53,6 +53,15 @@ const projects = [
     featured: false,
   },
   {
+    title: "Youth Entertainment Hack-A-Ton Project",
+    period: "2024",
+    description: "Participated in a Hack-A-Ton competition and independently built a youth entertainment website. Although the team couldn't complete the full project, I took the initiative to develop a functional prototype on my own, demonstrating self-motivation and ability to deliver under pressure.",
+    tools: ["Google Sites", "Web Development", "UI/UX", "Team Collaboration"],
+    impact: "Built a complete website prototype independently despite team challenges",
+    websiteLink: "https://sites.google.com/view/youthentertainment/home",
+    featured: false,
+  },
+  {
     title: "Fraudulent Job Post Detection",
     period: "August 2024 – December 2024",
     description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
@@ -143,6 +152,17 @@ export function Projects() {
                       >
                         <ExternalLink className="h-3 w-3" />
                         View Dashboard
+                      </a>
+                    )}
+                    {project.websiteLink && (
+                      <a 
+                        href={project.websiteLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        View Website
                       </a>
                     )}
                     {project.posterImage && (
