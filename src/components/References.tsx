@@ -26,6 +26,8 @@ const references = [
     name: "Janna Pankey",
     title: "Data Analyst",
     organization: "State Farm",
+    email: "jannapankey@gmail.com",
+    phone: "240-812-2061",
     linkedin: "https://www.linkedin.com/in/jannapankey/",
   },
 ];
