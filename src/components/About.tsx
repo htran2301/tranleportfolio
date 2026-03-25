@@ -8,6 +8,7 @@ import gsuDiploma from "@/assets/gsu-diploma.jpeg";
 const education = [{
   degree: "M.S. in Data Science and Analytics",
   school: "Georgia State University",
+  detail: "Concentration: Data Science in Business • GPA: 3.93",
   period: "Expected Dec 2026",
   current: true
 }, {
