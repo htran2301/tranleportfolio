@@ -195,6 +195,17 @@ export function Projects() {
                         View Poster
                       </a>
                     )}
+                    {project.linkedinPost && (
+                      <a 
+                        href={project.linkedinPost} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        LinkedIn Post
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>
