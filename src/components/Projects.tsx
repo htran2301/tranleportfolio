@@ -67,6 +67,8 @@ const projects = [
     description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
     tools: ["Python", "pandas", "matplotlib", "scikit-learn", "Machine Learning", "Logistic Regression", "EDA", "Data Preprocessing"],
     impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
+    githubLink: "https://github.com/htran2301/heart-disease",
+    pdfPoster: "/PosterDay2026-TranLe.pdf",
     featured: true,
   },
   {
