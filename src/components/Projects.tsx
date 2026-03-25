@@ -103,7 +103,7 @@ export function Projects() {
           </a>
         </ScrollAnimation>
 
-        <ScrollAnimationStagger className="grid md:grid-cols-2 gap-6">
+        <ScrollAnimationStagger className="grid md:grid-cols-2 gap-4 items-start">
           {projects.map((project, index) => (
             <motion.div key={project.title} variants={staggerItem}>
               <Card 
