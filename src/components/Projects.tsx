@@ -8,6 +8,16 @@ import { useState } from "react";
 import msa8030Poster from "@/assets/msa8030-poster.jpg";
 const projects = [
   {
+    title: "Heart Attack Risk Prediction – Personal Machine Learning Project",
+    period: "February 2026",
+    description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, numpy, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
+    tools: ["Python", "pandas", "numpy", "matplotlib", "scikit-learn", "Machine Learning", "Logistic Regression", "EDA", "Data Preprocessing"],
+    impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
+    githubLink: "https://github.com/htran2301/heart-disease",
+    pdfPoster: "/PosterDay2026-TranLe.pdf",
+    featured: true,
+  },
+  {
     title: "Healthcare Analytics – Shepherd Center",
     period: "August 2025 – December 2025",
     description: "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning. Applied machine learning methods and data-driven approaches to identify effective treatment strategies. Performed data cleaning, exploratory analysis, feature engineering, and model evaluation, delivering clinically meaningful insights to advance patient care.",
@@ -53,6 +63,14 @@ const projects = [
     featured: false,
   },
   {
+    title: "Fraudulent Job Post Detection",
+    period: "August 2024 – December 2024",
+    description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
+    tools: ["R", "Logistic Regression", "KNN", "Random Forest", "Feature Engineering"],
+    impact: "98% accuracy and 97% balanced accuracy with Random Forest",
+    featured: true,
+  },
+  {
     title: "Youth Entertainment Hack-A-Ton Project",
     period: "2024",
     description: "Participated in a Hack-A-Ton competition and independently built a youth entertainment website. Although the team couldn't complete the full project, I took the initiative to develop a functional prototype on my own, demonstrating self-motivation and ability to deliver under pressure.",
@@ -61,26 +79,7 @@ const projects = [
     websiteLink: "https://sites.google.com/view/youthentertainment/home",
     featured: false,
   },
-  {
-    title: "Heart Attack Risk Prediction – Personal Machine Learning Project",
-    period: "February 2026",
-    description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, numpy, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
-    tools: ["Python", "pandas", "numpy", "matplotlib", "scikit-learn", "Machine Learning", "Logistic Regression", "EDA", "Data Preprocessing"],
-    impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
-    githubLink: "https://github.com/htran2301/heart-disease",
-    pdfPoster: "/PosterDay2026-TranLe.pdf",
-    featured: true,
-  },
-  {
-    title: "Fraudulent Job Post Detection",
-    period: "August 2024 – December 2024",
-    description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
-    tools: ["R", "Logistic Regression", "KNN", "Random Forest", "Feature Engineering"],
-    impact: "98% accuracy and 97% balanced accuracy with Random Forest",
-    featured: true,
-  },
 ];
-
 export function Projects() {
   const [selectedPoster, setSelectedPoster] = useState<string | null>(null);
 
