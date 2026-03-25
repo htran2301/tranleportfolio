@@ -15,6 +15,7 @@ const projects = [
     impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
     githubLink: "https://github.com/htran2301/heart-disease",
     pdfPoster: "/PosterDay2026-TranLe.pdf",
+    linkedinPost: "https://www.linkedin.com/feed/update/urn:li:activity:7433741349268402176/",
     featured: true,
   },
   {
@@ -192,6 +193,17 @@ export function Projects() {
                       >
                         <ExternalLink className="h-3 w-3" />
                         View Poster
+                      </a>
+                    )}
+                    {project.linkedinPost && (
+                      <a 
+                        href={project.linkedinPost} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        LinkedIn Post
                       </a>
                     )}
                   </div>
