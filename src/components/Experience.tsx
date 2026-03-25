@@ -41,9 +41,9 @@ const experiences = [{
   organization: "Mathematics and Statistics Department",
   period: "August 2023 – May 2025",
   bullets: [
-    "Advised over 1000 students in solving problems, completing assignments, and preparing for exams using Excel",
-    "Communicated regularly with professors and instructors to support with coursework and identify areas where students need help twice or three times each week",
-    "Provided one-on-one or group support to students in understanding statistical concepts and Excel functions in person and online twice a week with 2 hours at once"
+    "Supported 1000+ students in solving problems, completing assignments, and preparing for exams deploying Excel, 100% students passed exam with high grade",
+    "Communicated regularly with professors and instructors to manage coursework and identify areas where students need help twice or three times each week",
+    "Provided one-on-one and group tutoring, improving student performance and comprehension"
   ],
   current: false
 }, {
