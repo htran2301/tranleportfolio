@@ -55,6 +55,12 @@ const awards = [
     image: rcobResearchFellowCertificate,
   },
   {
+    title: "Member, Technology Association of Georgia (TAG)",
+    institution: "Atlanta, Georgia",
+    period: "August 2025",
+    type: "certificate",
+  },
+  {
     title: "Dean's List",
     institution: "Georgia State University",
     period: "Fall 2025, Fall 2024, Spring 2023",

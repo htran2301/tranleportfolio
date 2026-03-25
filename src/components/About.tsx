@@ -8,6 +8,7 @@ import gsuDiploma from "@/assets/gsu-diploma.jpeg";
 const education = [{
   degree: "M.S. in Data Science and Analytics",
   school: "Georgia State University",
+  detail: "Concentration: Data Science in Business • GPA: 3.93",
   period: "Expected Dec 2026",
   current: true
 }, {
@@ -98,7 +99,7 @@ export function About() {
                       </span>}
                     <h4 className="font-display font-semibold text-primary">{edu.degree}</h4>
                     <p className="text-muted-foreground">{edu.school}</p>
-                    {edu.specialization && <p className="text-sm text-muted-foreground">{edu.specialization}</p>}
+                    {(edu.specialization || edu.detail) && <p className="text-sm text-muted-foreground">{edu.specialization || edu.detail}</p>}
                     <p className="text-sm text-accent mt-2">{edu.period}</p>
                     {edu.hasDiploma && <img src={gsuDiploma} alt="GSU Diploma" className="mt-4 w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity" onClick={() => setShowDiploma(true)} />}
                   </CardContent>

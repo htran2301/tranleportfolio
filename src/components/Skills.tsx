@@ -8,7 +8,7 @@ const skillCategories = [
   {
     icon: Code,
     title: "Technical Skills",
-    skills: ["SQL (Advanced)", "Python (pandas, NumPy, matplotlib)", "R", "Tableau", "Power BI", "Excel (Pivot Tables, Power Query)", "Databricks", "Delta Lake", "Machine Learning", "MongoDB"],
+    skills: ["SQL (Advanced)", "Python (pandas, NumPy, matplotlib)", "R", "Machine Learning", "Deep Learning", "Databricks", "Jupyter Notebook", "PyCharm", "Power BI", "Tableau", "Excel (Pivot Tables, VLOOKUP)", "Data Visualization", "Data Architecture", "Statistics", "Transformation"],
     color: "bg-primary/10 text-primary",
   },
   {

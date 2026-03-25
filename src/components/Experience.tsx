@@ -23,7 +23,7 @@ const experiences = [{
     "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning",
     "Applied machine learning methods (linear regression, logistic regression, KNN, Random Forest) and data-driven approaches to identify effective treatment strategies",
     "Performed data cleaning, exploratory analysis, feature engineering, and model evaluation using Python, SQL, RStudio, and generative AI solution tools, delivering clinically meaningful insights to advance patient care",
-    "Presented project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
+    "Presented to project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
   ],
   current: true
 }, {
@@ -31,9 +31,9 @@ const experiences = [{
   organization: "Dr. Xinyu Fu, Computer Information System Department",
   period: "August 2024 – Present",
   bullets: [
-    "Summarize literature reviews to support research projects, synthesizing findings into comprehensive reports by analyzing multiple research papers mainly operating Google Sheets",
+    "Summarize literature reviews to facilitate research projects, synthesizing findings into comprehensive reports by analyzing multiple research papers mainly operating Google Sheets",
     "Present research findings in written reports and oral presentations",
-    "Cooperate with supervisor/PhD candidates through weekly meetings to provide project updates and align research progress with goal"
+    "Collaborate with supervisor/PhD candidates through weekly meetings to deliver project updates and align research progress with goal"
   ],
   current: true
 }, {
@@ -41,9 +41,9 @@ const experiences = [{
   organization: "Mathematics and Statistics Department",
   period: "August 2023 – May 2025",
   bullets: [
-    "Advised over 1000 students in solving problems, completing assignments, and preparing for exams using Excel",
-    "Communicated regularly with professors and instructors to support with coursework and identify areas where students need help twice or three times each week",
-    "Provided one-on-one or group support to students in understanding statistical concepts and Excel functions in person and online twice a week with 2 hours at once"
+    "Supported 1000+ students in solving problems, completing assignments, and preparing for exams deploying Excel, 100% students passed exam with high grade",
+    "Communicated regularly with professors and instructors to manage coursework and identify areas where students need help twice or three times each week",
+    "Provided one-on-one and group tutoring, improving student performance and comprehension"
   ],
   current: false
 }, {
