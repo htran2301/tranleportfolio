@@ -15,6 +15,7 @@ const projects = [
     impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
     githubLink: "https://github.com/htran2301/heart-disease",
     pdfPoster: "/PosterDay2026-TranLe.pdf",
+    linkedinPost: "https://www.linkedin.com/feed/update/urn:li:activity:7433741349268402176/",
     featured: true,
   },
   {
