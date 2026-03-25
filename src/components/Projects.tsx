@@ -105,7 +105,7 @@ export function Projects() {
 
         <ScrollAnimationStagger className="columns-1 md:columns-2 gap-4 space-y-4">
           {projects.map((project, index) => (
-            <motion.div key={project.title} variants={staggerItem}>
+            <motion.div key={project.title} variants={staggerItem} className="break-inside-avoid">
               <Card 
                 className={`card-hover border-border/50 overflow-hidden h-full ${
                   project.featured ? 'lg:row-span-1' : ''
