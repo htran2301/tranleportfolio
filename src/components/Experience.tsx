@@ -23,7 +23,7 @@ const experiences = [{
     "Collaborated on a healthcare analytics project analyzing stroke patient data to support precision rehabilitation and treatment planning",
     "Applied machine learning methods (linear regression, logistic regression, KNN, Random Forest) and data-driven approaches to identify effective treatment strategies",
     "Performed data cleaning, exploratory analysis, feature engineering, and model evaluation using Python, SQL, RStudio, and generative AI solution tools, delivering clinically meaningful insights to advance patient care",
-    "Presented project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
+    "Presented to project deliverables including technical documentation, reproducible code, and stakeholder presentations, ensuring clarity and usability of results"
   ],
   current: true
 }, {

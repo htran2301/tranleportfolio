@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Capstone Site 2.0 Website – Team Lead",
     period: "January 2025 – May 2025",
-    description: "Led a team of 3 undergraduate students, collaborating with faculty, alumni, and companies to build 80% of website for CIS undergraduate students. Managed project scope, timelines, and documentation using Smartsheet.",
+    description: "Led a team of 3 undergraduate students, collaborating with faculty, alumni, and companies to gather, ensuring accurate and up-to-date information, built 80% of website for CIS undergraduate students. Managed project scope, project timelines, assigning tasks, milestones, and documentation using Smartsheet. Created a website leveraging integration of UI/UX design principles deploying Figma and Webflow, Google Sites ensuring a user-friendly experience.",
     tools: ["Figma", "Webflow", "Google Sites", "UI/UX", "Smartsheet", "Project Management"],
     impact: "Successfully delivered user-friendly platform for CIS students",
     featured: false,
