@@ -31,9 +31,9 @@ const experiences = [{
   organization: "Dr. Xinyu Fu, Computer Information System Department",
   period: "August 2024 – Present",
   bullets: [
-    "Summarize literature reviews to support research projects, synthesizing findings into comprehensive reports by analyzing multiple research papers mainly operating Google Sheets",
+    "Summarize literature reviews to facilitate research projects, synthesizing findings into comprehensive reports by analyzing multiple research papers mainly operating Google Sheets",
     "Present research findings in written reports and oral presentations",
-    "Cooperate with supervisor/PhD candidates through weekly meetings to provide project updates and align research progress with goal"
+    "Collaborate with supervisor/PhD candidates through weekly meetings to deliver project updates and align research progress with goal"
   ],
   current: true
 }, {
