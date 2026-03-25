@@ -184,6 +184,17 @@ export function Projects() {
                         View Poster
                       </button>
                     )}
+                    {project.pdfPoster && (
+                      <a 
+                        href={project.pdfPoster} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-accent hover:underline flex items-center gap-1"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        View Poster
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>
