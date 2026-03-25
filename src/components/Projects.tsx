@@ -62,6 +62,14 @@ const projects = [
     featured: false,
   },
   {
+    title: "Heart Attack Risk Prediction – Personal Machine Learning Project",
+    period: "February 2026",
+    description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
+    tools: ["Python", "pandas", "matplotlib", "scikit-learn", "Machine Learning", "Logistic Regression", "EDA", "Data Preprocessing"],
+    impact: "Advanced to final presentation round at AI & Analytics Conference poster competition",
+    featured: true,
+  },
+  {
     title: "Fraudulent Job Post Detection",
     period: "August 2024 – December 2024",
     description: "Cooperated with a team of 5 to develop a machine learning pipeline in R analyzing 17,000+ job postings with 17 features to detect fraudulent job postings. Processed data cleaning, feature engineering, and compared multiple models.",
