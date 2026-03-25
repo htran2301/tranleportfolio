@@ -57,7 +57,7 @@ const awards = [
   {
     title: "Dean's List",
     institution: "Georgia State University",
-    period: "Fall 2025, Fall 2024, Spring 2023",
+    period: "Fall 2024, Spring 2023",
     type: "dean",
   },
   {
