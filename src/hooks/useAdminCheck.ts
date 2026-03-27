@@ -22,13 +22,13 @@ export function useAdminCheck(userId: string | undefined) {
           .maybeSingle();
 
         if (error) {
-          console.error("Error checking admin status:", error);
+          if (import.meta.env.DEV) console.error("Error checking admin status:", error);
           setIsAdmin(false);
         } else {
           setIsAdmin(!!data);
         }
       } catch (err) {
-        console.error("Error checking admin status:", err);
+        if (import.meta.env.DEV) console.error("Error checking admin status:", err);
         setIsAdmin(false);
       } finally {
         setLoading(false);

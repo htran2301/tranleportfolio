@@ -17,12 +17,12 @@ export function usePortfolioViews() {
           .select("*", { count: "exact", head: true });
 
         if (error) {
-          console.error("Error fetching view count:", error);
+          if (import.meta.env.DEV) console.error("Error fetching view count:", error);
         } else {
           setViewCount(count);
         }
       } catch (err) {
-        console.error("Error tracking view:", err);
+        if (import.meta.env.DEV) console.error("Error tracking view:", err);
       } finally {
         setLoading(false);
       }
