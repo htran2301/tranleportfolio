@@ -28,7 +28,7 @@ export function useAdminCheck(userId: string | undefined) {
           setIsAdmin(!!data);
         }
       } catch (err) {
-        console.error("Error checking admin status:", err);
+        if (import.meta.env.DEV) console.error("Error checking admin status:", err);
         setIsAdmin(false);
       } finally {
         setLoading(false);

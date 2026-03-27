@@ -22,7 +22,7 @@ export function usePortfolioViews() {
           setViewCount(count);
         }
       } catch (err) {
-        console.error("Error tracking view:", err);
+        if (import.meta.env.DEV) console.error("Error tracking view:", err);
       } finally {
         setLoading(false);
       }
