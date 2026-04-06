@@ -26,6 +26,7 @@ const awards = [
     institution: "Georgia State University Foundation",
     period: "Spring 2026",
     type: "scholarship",
+    image: deltaAnalyticsCertificate,
   },
   {
     title: "Outstanding Work Recognition",
