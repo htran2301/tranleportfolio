@@ -11,6 +11,7 @@ import shepherdSprintCertificate from "@/assets/shepherd-sprint-certificate.jpeg
 import amcisReviewerCertificate from "@/assets/amcis-reviewer-certificate.jpeg";
 import rcobResearchFellowCertificate from "@/assets/rcob-research-fellow-certificate.jpeg";
 import witCertificate from "@/assets/wit-certificate.jpeg";
+import deltaAnalyticsCertificate from "@/assets/delta-analytics-scholar.png";
 
 const awards = [
   {
@@ -25,6 +26,7 @@ const awards = [
     institution: "Georgia State University Foundation",
     period: "Spring 2026",
     type: "scholarship",
+    image: deltaAnalyticsCertificate,
   },
   {
     title: "Outstanding Work Recognition",
