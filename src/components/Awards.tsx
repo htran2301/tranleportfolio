@@ -11,6 +11,7 @@ import shepherdSprintCertificate from "@/assets/shepherd-sprint-certificate.jpeg
 import amcisReviewerCertificate from "@/assets/amcis-reviewer-certificate.jpeg";
 import rcobResearchFellowCertificate from "@/assets/rcob-research-fellow-certificate.jpeg";
 import witCertificate from "@/assets/wit-certificate.jpeg";
+import deltaAnalyticsCertificate from "@/assets/delta-analytics-scholar.png";
 
 const awards = [
   {
