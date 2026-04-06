@@ -26,7 +26,7 @@ const skillCategories = [
   {
     icon: MessageSquare,
     title: "Soft Skills",
-    skills: ["Critical Thinking", "Decision-Making", "Communication Skills", "Problem-Solving", "Agility", "Learning Agility", "Analytical Thinking", "Data Storytelling", "Cross-Functional Collaboration", "Adaptability", "Attention to Detail", "Time Management"],
+    skills: ["Critical Thinking", "Decision-Making", "Communication Skills", "Problem-Solving", "Agility", "Learning Agility", "Analytical Thinking", "Data Storytelling", "Cross-Functional Collaboration", "Adaptability", "Attention to Detail", "Time Management", "Project Management", "Public Speaking", "Business Analyst"],
     color: "bg-navy-light/10 text-navy-light",
   },
 ];
