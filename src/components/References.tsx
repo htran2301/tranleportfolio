@@ -18,7 +18,7 @@ const references = [
   },
   {
     name: "Dr. Xinyu Fu",
-    title: "Assistant Professor",
+    title: "Associate Professor",
     organization: "Georgia State University",
     email: "xfu11@gsu.edu",
   },
