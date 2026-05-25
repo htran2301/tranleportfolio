@@ -11,6 +11,17 @@ const experiences = [{
   bullets: [],
   current: false
 }, {
+  role: "Data Science Researcher",
+  organization: "FanDuel",
+  period: "January 2026 – May 2026",
+  bullets: [
+    "Engineered and delivered an LLM-powered semantic retrieval and knowledge engineering pipeline that processed 8,000+ enterprise Confluence pages, enabling ontology-driven knowledge discovery and scalable enterprise data governance at FanDuel",
+    "Leveraged NLP techniques including Sentence-BERT embeddings, TF-IDF, and cosine similarity to retrieve high-confidence business context, automate ontology alignment, and generate AI-assisted standardized data definitions with improved semantic consistency and explainability",
+    "Integrated enterprise documentation, schema metadata, and Databricks lineage information into a unified Generative AI framework that enhanced data accessibility, governance transparency, and internal knowledge retrieval for cross-functional stakeholders",
+    "Successfully delivered production-ready ontology and enterprise data dictionary assets to the FanDuel team, supporting downstream governance, metadata standardization, and AI-driven data understanding initiatives"
+  ],
+  current: false
+}, {
   role: "Graduate Research Assistant",
   organization: "Institute for Insight Department",
   period: "August 2025 – Present",
