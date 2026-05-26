@@ -11,7 +11,7 @@ const references = [
   },
   {
     name: "Dr. Houping Xiao",
-    title: "Assistant Professor",
+    title: "Associate Professor",
     organization: "Georgia State University",
     email: "hxiao@gsu.edu",
     phone: "404-413-7704",
