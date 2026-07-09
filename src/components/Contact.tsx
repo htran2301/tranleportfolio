@@ -37,7 +37,7 @@ export function Contact() {
               <h3 className="font-display font-semibold text-xl text-primary mb-4">
                 Contact Information
               </h3>
-              <p className="text-muted-foreground mb-8">I'm actively seeking 2026 internship and full-time opportunities in Data Analytics, Data Science, and Data Engineering. Let's connect!</p>
+              <p className="text-muted-foreground mb-8">I'm actively seeking a full-time position/internship starting in Fall 2026 (August) and a full-time role in December 2026 in Data Analytics, Data Science, and Data Engineering. Let's connect!</p>
             </ScrollAnimation>
 
             <ScrollAnimationStagger className="grid sm:grid-cols-2 gap-4">
