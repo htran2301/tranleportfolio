@@ -16,6 +16,14 @@ const projects = [
     featured: true,
   },
   {
+    title: "Environmental Intelligence System",
+    period: "January 2026 – May 2026",
+    description: "Processed and analyzed 500+ ESG and sustainability reports using Python-based document extraction and data pipelines. Built a Neo4j knowledge graph and ontology to connect environmental metrics, operational claims, and supporting evidence across organizations. Developed a Streamlit application that enabled users to search reports, compare companies, and investigate sustainability performance through an intuitive interface.",
+    tools: ["Python", "ESG", "Sustainability Analytics", "Document Extraction", "Data Pipelines", "Neo4j", "Knowledge Graph", "Ontology", "Streamlit"],
+    impact: "Enabled users to search reports, compare companies, and investigate sustainability performance through an interactive knowledge graph application",
+    featured: true,
+  },
+  {
     title: "Heart Attack Risk Prediction – Personal Machine Learning Project",
     period: "February 2026",
     description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, numpy, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
