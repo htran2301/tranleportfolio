@@ -8,6 +8,14 @@ import { useState } from "react";
 import msa8030Poster from "@/assets/msa8030-poster.jpg";
 const projects = [
   {
+    title: "Snowflake Sales & Forecasting Analytics Platform",
+    period: "June 2026 – July 2026",
+    description: "Designed and developed an end-to-end analytics platform in Snowflake using advanced SQL and Snowpark Python to ingest, transform, validate, and forecast multi-year economic datasets from the Snowflake Marketplace. Built reusable data models, evaluated ARIMA, SARIMAX, and ETS forecasting models using RMSE, and developed an interactive Streamlit dashboard to automate reporting, visualize trends, and support business decision-making.",
+    tools: ["Snowflake", "SQL", "Snowpark Python", "Python", "Streamlit", "ARIMA", "SARIMAX", "ETS", "Time-Series Forecasting"],
+    impact: "Automated the end-to-end forecasting workflow and transformed raw economic data into actionable business insights through scalable analytics and interactive reporting",
+    featured: true,
+  },
+  {
     title: "Heart Attack Risk Prediction – Personal Machine Learning Project",
     period: "February 2026",
     description: "Built an end-to-end machine learning model to predict heart attack risk, including data cleaning, preprocessing, and exploratory analysis using Python (pandas, numpy, matplotlib). Improved model performance by handling class imbalance and developing classification models (e.g., logistic regression) using scikit-learn. Presented findings through a poster competition at the AI & Analytics Conference, advancing to the final presentation round.",
