@@ -38,7 +38,7 @@ const experiences = [{
   ],
   current: true
 }, {
-  role: "Data Analytics",
+  role: "Machine Learning Engineer",
   organization: "Shepherd Center, Atlanta, Georgia",
   period: "August 2025 – December 2025",
   bullets: [

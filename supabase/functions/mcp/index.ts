@@ -178,7 +178,7 @@ var EXPERIENCE = [
     ]
   },
   {
-    role: "Data Analytics",
+    role: "Machine Learning Engineer",
     organization: "Shepherd Center, Atlanta, Georgia",
     period: "August 2025 \u2013 December 2025",
     current: true,
