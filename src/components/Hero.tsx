@@ -8,6 +8,12 @@ export function Hero() {
           {/* Content */}
           <div className="order-2 lg:order-1">
             
+            <div className="animate-fade-up">
+              <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-6">
+                Specializing in Data Science
+              </span>
+            </div>
+            
             <h1 className="animate-fade-up animation-delay-100 font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight mb-6">
               Tran (Theresa) Le
             </h1>
