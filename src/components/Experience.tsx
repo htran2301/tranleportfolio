@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 const experiences = [{
   role: "Researcher Intern",
   organization: "Yamaha Motor Corporation, USA",
-  period: "May 2026 – August 2026",
+  period: "May 2026 – Present",
   bullets: [
     "Analyze 100,000+ customer survey records using Excel, Python, SQL, and Power BI to identify trends, validate data quality, and support business decision-making",
     "Data entry using crosstab table, and collect 100,000+ data on the website using Python",
     "Developed data processing and reporting workflows that transformed large-scale datasets into actionable insights for cross-functional stakeholders",
     "Leveraged Python libraries including pandas and NumPy to clean, analyze, and visualize complex datasets while ensuring data integrity and accuracy"
   ],
-  current: false
+  current: true
 }, {
   role: "Data Science Researcher",
   organization: "FanDuel",
