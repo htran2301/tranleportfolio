@@ -5,7 +5,7 @@ import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAn
 import { motion } from "framer-motion";
 
 const experiences = [{
-  role: "Researcher Intern",
+  role: "Research Analyst",
   organization: "Yamaha Motor Corporation, USA",
   period: "May 2026 – Present",
   bullets: [

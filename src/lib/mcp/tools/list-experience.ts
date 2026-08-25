@@ -2,7 +2,7 @@ import { defineTool } from "@lovable.dev/mcp-js";
 
 const EXPERIENCE = [
   {
-    role: "Researcher Intern",
+    role: "Research Analyst",
     organization: "Yamaha Motor Corporation, USA",
     period: "May 2026 – Present",
     current: true,
