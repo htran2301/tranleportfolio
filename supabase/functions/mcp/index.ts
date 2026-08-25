@@ -144,8 +144,8 @@ var EXPERIENCE = [
   {
     role: "Researcher Intern",
     organization: "Yamaha Motor Corporation, USA",
-    period: "May 2026 \u2013 August 2026",
-    current: false,
+    period: "May 2026 \u2013 Present",
+    current: true,
     highlights: [
       "Analyzed 100,000+ customer survey records with Excel, Python, SQL, and Power BI to identify trends, validate data quality, and support decisions.",
       "Collected 100,000+ records from the web using Python and structured them via crosstab data entry.",
