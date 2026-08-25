@@ -142,7 +142,7 @@ var list_skills_default = defineTool2({
 import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.22.2";
 var EXPERIENCE = [
   {
-    role: "Researcher Intern",
+    role: "Research Analyst",
     organization: "Yamaha Motor Corporation, USA",
     period: "May 2026 \u2013 Present",
     current: true,
