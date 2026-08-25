@@ -50,7 +50,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Research Assistant",
+    role: "Graduate Research Assistant",
     organization: "Dr. Xinyu Fu, Computer Information System Department",
     period: "August 2024 – Present",
     current: true,
