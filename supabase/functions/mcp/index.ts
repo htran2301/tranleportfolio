@@ -14,7 +14,7 @@ var ABOUT = {
   bio: [
     "I'm a Graduate Research Assistant and Master's student in Data Science and Analytics at Georgia State University, with a strong foundation in data analytics, machine learning, and healthcare data. My research focuses on leveraging advanced analytics to support clinical decision-making and patient outcomes.",
     "Currently, I collaborate with the Shepherd Center on healthcare analytics projects, applying machine learning techniques to stroke patient rehabilitation data. My goal is to bridge the gap between complex data and meaningful insights that drive real-world impact.",
-    "I'm currently seeking a full-time position/internship starting in Fall 2026 (August) and a full-time role in December 2026 in Data Analytics, Data Science, and Data Engineering."
+    "I'm currently seeking a full-time role starting in January 2027 in Data Analytics, Data Science, and Data Engineering."
   ],
   education: [
     {
@@ -377,7 +377,7 @@ var CONTACT = {
   linkedin: "https://www.linkedin.com/in/tranle2301",
   github: "https://github.com/htran2301",
   portfolio: "https://tranleportfolio.lovable.app",
-  seeking: "A full-time position/internship starting in Fall 2026 (August) and a full-time role in December 2026 in Data Analytics, Data Science, and Data Engineering."
+  seeking: "A full-time role starting in January 2027 in Data Analytics, Data Science, and Data Engineering."
 };
 var get_contact_default = defineTool6({
   name: "get_contact",
