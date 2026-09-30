@@ -4,16 +4,31 @@ import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation, ScrollAnimationStagger, staggerItem } from "./ScrollAnimation";
 import { motion } from "framer-motion";
 
-const experiences = [{
+type ExperienceItem = {
+  role: string;
+  organization: string;
+  period: string;
+  bullets: string[];
+  tech?: string;
+  current: boolean;
+};
+
+const experiences: ExperienceItem[] = [{
   role: "Research Analyst",
   organization: "Yamaha Motor Corporation, USA",
   period: "May 2026 – Present",
   bullets: [
-    "Analyze 100,000+ customer survey records using Excel, Python, SQL, and Power BI to identify trends, validate data quality, and support business decision-making",
-    "Data entry using crosstab table, and collect 100,000+ data on the website using Python",
-    "Developed data processing and reporting workflows that transformed large-scale datasets into actionable insights for cross-functional stakeholders",
-    "Leveraged Python libraries including pandas and NumPy to clean, analyze, and visualize complex datasets while ensuring data integrity and accuracy"
+    "Analyze 100,000+ customer survey records using Excel, Python, SQL, and Power BI to identify customer trends, validate data quality, and support data-driven business decisions",
+    "Automate web data collection and processing of 100,000+ records using Python, and conduct cross-tabulation analyses to support customer and market research",
+    "Develop automated data processing and reporting workflows that transform large-scale datasets into actionable insights for cross-functional stakeholders",
+    "Design and develop interactive Power BI dashboards to visualize KPIs, customer trends, and business performance for stakeholder reporting and decision-making",
+    "Developed the first internal AI chatbot using Microsoft 365 Copilot, enabling employees to query business information and reducing information search time by approximately 80%",
+    "Built an automated initiative-tracking system using Microsoft Lists, Power Apps, and Power Automate, automating 100% of scheduled biweekly/monthly reminder workflows and reducing manual administrative work for managers by an estimated 70%",
+    "Implement automated workflows for personalized record access, deep-linked editing, financial calculations, and stakeholder notifications, improving the efficiency of internal reporting and initiative management",
+    "Collaborated with a fellow intern on a project expanding Yamaha University, presenting the outcome to company leaders and employees",
+    "Designed and tested retrieval and data-processing workflows across 100,000+ survey records and four years of reports, covering preprocessing, metadata, validation, and source traceability for reliable AI-enabled analysis"
   ],
+  tech: "Python (pandas, NumPy) • SQL • Excel • Power BI • Microsoft 365 Copilot • AI Chatbots • Power Apps • Power Automate • Microsoft Lists • Data Analysis • Data Visualization • Data Cleaning • Data Validation • Web Scraping • ETL • Workflow Automation • Cross-Tabulation • Business Intelligence",
   current: true
 }, {
   role: "Data Science Researcher",
@@ -122,6 +137,11 @@ export function Experience() {
                             </li>
                           ))}
                         </ul>
+                        {exp.tech && (
+                          <p className="text-xs text-muted-foreground mt-3 leading-relaxed text-left">
+                            <span className="font-medium text-foreground">Technical Skills:</span> {exp.tech}
+                          </p>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
