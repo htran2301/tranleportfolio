@@ -59,7 +59,7 @@ export function About() {
                 is to bridge the gap between complex data and meaningful insights that drive real-world impact.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm currently seeking <span className="text-primary font-medium">a full-time role starting after December 15, 2026</span> (my graduation) in 
+                I'm currently seeking <span className="text-primary font-medium">a full-time role starting in January 2027</span> (after my graduation) in 
                 Data Analytics, Data Science, and Data Engineering.
               </p>
 

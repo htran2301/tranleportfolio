@@ -9,7 +9,7 @@ const CONTACT = {
   github: "https://github.com/htran2301",
   portfolio: "https://tranleportfolio.lovable.app",
   seeking:
-    "A full-time position/internship starting in Fall 2026 (August) and a full-time role in December 2026 in Data Analytics, Data Science, and Data Engineering.",
+    "A full-time role starting in January 2027 in Data Analytics, Data Science, and Data Engineering.",
 };
 
 export default defineTool({
