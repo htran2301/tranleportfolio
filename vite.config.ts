@@ -20,5 +20,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/tranleportfolio/",
+  // GitHub Pages deploys under /tranleportfolio/; Lovable preview/publish serves from /
+  base: process.env.GITHUB_ACTIONS ? "/tranleportfolio/" : "/",
 }));
